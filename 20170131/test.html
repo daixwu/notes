@@ -9,19 +9,21 @@
     </body>
     <script type="text/javascript">
     var fn = null;
-    function foo() {
-        var a = 2;
-        function innnerFoo() {
-            console.log(a);
+    'use strict';
+    var a = 20;
+    function foo () {
+        var a = 1;
+        var obj = {
+            a: 10,
+            c: this.a + 20,
+            fn: function () {
+                return this.a;
+            }
         }
-        fn = innnerFoo; // 将 innnerFoo的引用，赋值给全局变量中的fn
-    }
+        return obj.c;
 
-    function bar() {
-        fn(); // 此处的保留的innerFoo的引用
     }
-
-    foo();
-    bar(); // 2
+    console.log(foo());    // 1
+    console.log(window.foo());  // 20
     </script>
 </html>
