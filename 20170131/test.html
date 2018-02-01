@@ -5,25 +5,22 @@
         <title>test</title>
     </head>
     <body>
-
+        <h1>Test</h1>
     </body>
     <script type="text/javascript">
-    var fn = null;
-    'use strict';
-    var a = 20;
-    function foo () {
-        var a = 1;
-        var obj = {
-            a: 10,
-            c: this.a + 20,
-            fn: function () {
-                return this.a;
+        var person = {
+            name: 'TOM',
+            age: '20',
+            getName: function() {
+                return this.name
             }
         }
-        return obj.c;
 
-    }
-    console.log(foo());    // 1
-    console.log(window.foo());  // 20
+        console.log(person["name"], person.age);
+
+        ["name", "age"].forEach(function(item){
+            console.log(person[item]);
+        })
+
     </script>
 </html>
