@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>canvas</title>
+        <style media="screen">
+            body{
+                background-color: black;
+            }
+            #c1 {
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="c1" width="300" height="300"></canvas>
+
+        <script type="text/javascript">
+            var oC = document.querySelector("#c1");
+            var oGC = oC.getContext("2d");
+
+            oGC.fillStyle = "red";
+            oGC.fillRect(50,50,100,100);
+
+            oGC.globalCompositeOperation = "destination-out	";
+
+            oGC.fillStyle = "blue";
+            oGC.fillRect(100,100,100,100);
+        </script>
+    </body>
+</html>
