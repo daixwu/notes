@@ -37,7 +37,7 @@ Study Notes
 
 
 
-##JS那些事儿(Reprint)
+## JS那些事儿 [ Reprint ]
 
 [内存空间详解](https://github.com/daixwu/notes/blob/master/20170131/1.md)
 
