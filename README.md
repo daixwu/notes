@@ -11,6 +11,14 @@ Study Notes
 
 [zepto源码探析](https://github.com/daixwu/notes/blob/master/20180326/1.md)
 
+[Canvas API 详解](https://github.com/daixwu/notes/blob/master/20180621/1.md)
+
+[前端动画效果实现方式初探](https://github.com/daixwu/notes/blob/master/20180621/2.md)
+
+[H5视频播放解决方案](https://github.com/daixwu/notes/blob/master/20180621/3.md)
+
+[JS 中的各种宽高属性](https://github.com/daixwu/notes/blob/master/20180621/4.md)
+
 
 
 ## VUE 实战笔记
