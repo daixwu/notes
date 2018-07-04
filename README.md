@@ -5,8 +5,6 @@ Study Notes
 
 [ECMAScript6常用语法](https://github.com/daixwu/notes/blob/master/20170129/1.md)
 
-[Mongoose的使用](https://github.com/daixwu/notes/blob/master/20180116/1.md)
-
 [eslintrc文件配置](https://github.com/daixwu/notes/blob/master/20180119/1.md)
 
 [zepto源码探析](https://github.com/daixwu/notes/blob/master/20180326/1.md)
@@ -59,15 +57,21 @@ Study Notes
 
 [ES6常用知识合集](https://github.com/daixwu/notes/blob/master/20170131/10.md)
 
- 
 
 
+## MongoDB 了解一下
 
-## 
+[Mongoose的使用](https://github.com/daixwu/notes/blob/master/20180116/1.md)
 
- 
+ [Mongoose基础入门](https://www.cnblogs.com/xiaohuochai/p/7215067.html)
 
-## 
+[Mongoose开发实战-基础篇](http://ghmagical.com/article/page/id/skiGlQ0VNBrt)
+
+[Mongoose开发实战-进阶篇](http://ghmagical.com/article/page/id/6s0OlGT8AnCk)
+
+[Mongoose开发实战-高级篇](http://ghmagical.com/article/page/id/1NSGRZGU93cy)
+
+[MongoDB常用语句](http://ghmagical.com/article/page/id/Bj7qgmJ3CJUE)
 
  
 
