@@ -59,6 +59,12 @@ Study Notes
 
 
 
+## Node 实用模块
+
+[config-lite模块的使用](https://github.com/daixwu/notes/blob/master/20180703/1.md)
+
+ 
+
 ## MongoDB 了解一下
 
 [Mongoose的使用](https://github.com/daixwu/notes/blob/master/20180116/1.md)
