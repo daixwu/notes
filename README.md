@@ -17,7 +17,9 @@ Study Notes
 
 [JS 中的各种宽高属性](https://github.com/daixwu/notes/blob/master/20180621/4.md)
 
+[JS开发中的一些小技巧和方法](https://github.com/daixwu/notes/blob/master/20180709/1.md)
 
+[移动端滑动固顶效果](https://github.com/daixwu/notes/blob/master/20180709/2.md)
 
 ## VUE 实战笔记
 
