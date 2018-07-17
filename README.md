@@ -11,8 +11,6 @@ Study Notes
 
 [Canvas API 详解](https://github.com/daixwu/notes/blob/master/20180621/1.md)
 
-[前端动画效果实现方式初探](https://github.com/daixwu/notes/blob/master/20180621/2.md)
-
 [H5视频播放解决方案](https://github.com/daixwu/notes/blob/master/20180621/3.md)
 
 [JS 中的各种宽高属性](https://github.com/daixwu/notes/blob/master/20180621/4.md)
@@ -20,6 +18,20 @@ Study Notes
 [JS开发中的一些小技巧和方法](https://github.com/daixwu/notes/blob/master/20180709/1.md)
 
 [移动端滑动固顶效果](https://github.com/daixwu/notes/blob/master/20180709/2.md)
+
+
+
+## 前端动画实现
+
+[前端动画效果实现方式初探](https://github.com/daixwu/notes/blob/master/20180621/2.md)
+
+[CSS3动画之逐帧动画](https://github.com/daixwu/notes/blob/master/20180710/1.md)
+
+[H5序列帧动画实现过程（附源码）](https://blog.csdn.net/Mr_Zing/article/details/78900519)
+
+[如丝般顺滑：使用 CSS3 实现 60 帧的动画](https://www.zcfy.cc/article/smooth-as-butter-achieving-60-fps-animations-with-css3-1054.html#)
+
+
 
 ## VUE 实战笔记
 
