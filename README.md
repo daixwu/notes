@@ -19,7 +19,7 @@ Study Notes
 
 [移动端滑动固顶效果](https://github.com/daixwu/notes/blob/master/20180709/2.md)
 
-基于 JavaScript 开发灵活的数据应用
+[基于 JavaScript 开发灵活的数据应用](https://github.com/daixwu/notes/blob/master/20180903/1.md)
 
 
 
