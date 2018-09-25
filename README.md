@@ -35,7 +35,7 @@ Study Notes
 
 ## ECMAScript 6
 
-[Class](#)
+[Class](https://github.com/daixwu/notes/blob/master/20180925/1.md)
 
 ## VUE 实战笔记
 
