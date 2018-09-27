@@ -49,7 +49,7 @@ Study Notes
 
 [数组的扩展](https://github.com/daixwu/notes/blob/master/20180926/7.md)
 
-[对象的扩展](#)
+[对象的扩展](https://github.com/daixwu/notes/blob/master/20180927/1.md)
 
 ## VUE 实战笔记
 
