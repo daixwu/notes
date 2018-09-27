@@ -21,8 +21,6 @@ Study Notes
 
 [基于 JavaScript 开发灵活的数据应用](https://github.com/daixwu/notes/blob/master/20180903/1.md)
 
-
-
 ## 前端动画实现
 
 [前端动画效果实现方式初探](https://github.com/daixwu/notes/blob/master/20180621/2.md)
@@ -36,6 +34,16 @@ Study Notes
 ## ECMAScript 6
 
 [Class](https://github.com/daixwu/notes/blob/master/20180925/1.md)
+
+[let 和 const 命令](#)
+
+[变量的解构赋值](#)
+
+[字符串的扩展](#)
+
+[正则的扩展](#)
+
+[数值的扩展](#)
 
 ## VUE 实战笔记
 
