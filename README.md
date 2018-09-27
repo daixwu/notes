@@ -35,15 +35,21 @@ Study Notes
 
 [Class](https://github.com/daixwu/notes/blob/master/20180925/1.md)
 
-[let 和 const 命令](#)
+[let 和 const 命令](https://github.com/daixwu/notes/blob/master/20180926/1.md)
 
-[变量的解构赋值](#)
+[变量的解构赋值](https://github.com/daixwu/notes/blob/master/20180926/2.md)
 
-[字符串的扩展](#)
+[字符串的扩展](https://github.com/daixwu/notes/blob/master/20180926/3.md)
 
-[正则的扩展](#)
+[正则的扩展](https://github.com/daixwu/notes/blob/master/20180926/4.md)
 
-[数值的扩展](#)
+[数值的扩展](https://github.com/daixwu/notes/blob/master/20180926/5.md)
+
+[函数的扩展](https://github.com/daixwu/notes/blob/master/20180926/6.md)
+
+[数组的扩展](https://github.com/daixwu/notes/blob/master/20180926/7.md)
+
+[对象的扩展](#)
 
 ## VUE 实战笔记
 
