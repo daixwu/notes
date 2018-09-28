@@ -51,6 +51,14 @@ Study Notes
 
 [对象的扩展](https://github.com/daixwu/notes/blob/master/20180927/1.md)
 
+[Symbol](#)
+
+[Set 和 Map 数据结构](#)
+
+[Proxy](#)
+
+[Promise 对象](#)
+
 ## VUE 实战笔记
 
 [vue 是什么 vue实例与数据绑定 计算数据](https://github.com/daixwu/notes/blob/master/20180117/1.md)
