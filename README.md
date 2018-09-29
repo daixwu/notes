@@ -59,6 +59,12 @@ Study Notes
 
 [Promise 对象](https://github.com/daixwu/notes/blob/master/20180928/4.md)
 
+[async 函数](#)
+
+[Module](#)
+
+[编程风格](#)
+
 ## VUE 实战笔记
 
 [vue 是什么 vue实例与数据绑定 计算数据](https://github.com/daixwu/notes/blob/master/20180117/1.md)
