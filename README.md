@@ -59,11 +59,11 @@ Study Notes
 
 [Promise 对象](https://github.com/daixwu/notes/blob/master/20180928/4.md)
 
-[async 函数](#)
+[async 函数](https://github.com/daixwu/notes/blob/master/20180929/1.md)
 
-[Module](#)
+[Module](https://github.com/daixwu/notes/blob/master/20180929/2.md)
 
-[编程风格](#)
+[编程风格](https://github.com/daixwu/notes/blob/master/20180929/3.md)
 
 ## VUE 实战笔记
 
