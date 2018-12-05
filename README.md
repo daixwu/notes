@@ -9,7 +9,6 @@ Study Notes
 
 [zepto源码探析](https://github.com/daixwu/notes/blob/master/posts/20180326/1.md)
 
-[Canvas API 详解](https://github.com/daixwu/notes/blob/master/posts/20180621/1.md)
 
 [H5视频播放解决方案](https://github.com/daixwu/notes/blob/master/posts/20180621/3.md)
 
@@ -30,6 +29,10 @@ Study Notes
 [H5序列帧动画实现过程（附源码）](https://blog.csdn.net/Mr_Zing/article/details/78900519)
 
 [如丝般顺滑：使用 CSS3 实现 60 帧的动画](https://www.zcfy.cc/article/smooth-as-butter-achieving-60-fps-animations-with-css3-1054.html#)
+
+## Canvas
+
+[Canvas API 详解](https://github.com/daixwu/notes/blob/master/posts/20180621/1.md)
 
 ## ECMAScript 6
 
