@@ -68,23 +68,9 @@ Study Notes
 
 [编程风格](https://github.com/daixwu/notes/blob/master/posts/20180929/3.md)
 
-## VUE 实战笔记
-
-[vue 是什么 vue实例与数据绑定 计算数据](https://github.com/daixwu/notes/blob/master/posts/20180117/1.md)
-
-[内置指令 数组更新 方法与事件](https://github.com/daixwu/notes/blob/master/posts/20180117/2.md)
-
-[表单与v-model](https://github.com/daixwu/notes/blob/master/posts/20180117/3.md)
-
-[Vue中的组件](https://github.com/daixwu/notes/blob/master/posts/20180117/4.md)
-
-[自定义指令](https://github.com/daixwu/notes/blob/master/posts/20180126/1.md)
-
-[Render 函数](https://github.com/daixwu/notes/blob/master/posts/20180126/2.md)
-
-
-
 ## JS那些事儿 [ Reprint ]
+
+[JS事件那些事儿 一次整明白](https://github.com/daixwu/notes/blob/master/posts/20181206/1.md)
 
 [内存空间详解](https://github.com/daixwu/notes/blob/master/posts/20170131/1.md)
 
@@ -106,15 +92,33 @@ Study Notes
 
 [ES6常用知识合集](https://github.com/daixwu/notes/blob/master/posts/20170131/10.md)
 
+## TOOL
 
+[npm 使用背书 知其一知其二](https://github.com/daixwu/notes/blob/master/posts/20181207/1.md)
 
-## Node 实用模块
+[使用 rollup 打包 JS](https://github.com/daixwu/notes/blob/master/posts/20181204/1.md)
+
+[Canvas 图片处理与合成](https://github.com/daixwu/notes/blob/master/posts/20181130/1.md)
+
+## VUE 实战笔记
+
+[vue 是什么 vue实例与数据绑定 计算数据](https://github.com/daixwu/notes/blob/master/posts/20180117/1.md)
+
+[内置指令 数组更新 方法与事件](https://github.com/daixwu/notes/blob/master/posts/20180117/2.md)
+
+[表单与v-model](https://github.com/daixwu/notes/blob/master/posts/20180117/3.md)
+
+[Vue中的组件](https://github.com/daixwu/notes/blob/master/posts/20180117/4.md)
+
+[自定义指令](https://github.com/daixwu/notes/blob/master/posts/20180126/1.md)
+
+[Render 函数](https://github.com/daixwu/notes/blob/master/posts/20180126/2.md)
+
+### Node 实用模块
 
 [config-lite模块的使用](https://github.com/daixwu/notes/blob/master/posts/20180703/1.md)
 
- 
-
-## MongoDB 了解一下
+### MongoDB 了解一下
 
 [Mongoose的使用](https://github.com/daixwu/notes/blob/master/posts/20180116/1.md)
 
