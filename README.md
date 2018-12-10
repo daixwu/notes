@@ -122,7 +122,7 @@ Study Notes
 
 [Mongoose的使用](https://github.com/daixwu/notes/blob/master/posts/20180116/1.md)
 
- [Mongoose基础入门](https://www.cnblogs.com/xiaohuochai/p/7215067.html)
+[Mongoose基础入门](https://www.cnblogs.com/xiaohuochai/p/7215067.html)
 
 [Mongoose开发实战-基础篇](http://ghmagical.com/article/page/id/skiGlQ0VNBrt)
 
