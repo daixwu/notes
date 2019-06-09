@@ -9,7 +9,6 @@ Study Notes
 
 [zepto源码探析](https://github.com/daixwu/notes/blob/master/posts/20180326/1.md)
 
-
 [H5视频播放解决方案](https://github.com/daixwu/notes/blob/master/posts/20180621/3.md)
 
 [JS 中的各种宽高属性](https://github.com/daixwu/notes/blob/master/posts/20180621/4.md)
@@ -19,6 +18,10 @@ Study Notes
 [移动端滑动固顶效果](https://github.com/daixwu/notes/blob/master/posts/20180709/2.md)
 
 [基于 JavaScript 开发灵活的数据应用](https://github.com/daixwu/notes/blob/master/posts/20180903/1.md)
+
+## 优雅的 CSS
+
+[Flex-弹性布局](https://github.com/daixwu/notes/blob/master/posts/20190606/1.md)
 
 ## 前端动画实现
 
