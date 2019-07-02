@@ -95,6 +95,8 @@ Study Notes
 
 [ES6常用知识合集](https://github.com/daixwu/notes/blob/master/posts/20170131/10.md)
 
+[理解 JavaScript 中的 call、apply、bind](https://github.com/daixwu/notes/blob/master/posts/20181218/1.md)
+
 ## TOOL
 
 [npm 使用背书 知其一知其二](https://github.com/daixwu/notes/blob/master/posts/20181207/1.md)
@@ -135,6 +137,3 @@ Study Notes
 
 [MongoDB常用语句](http://ghmagical.com/article/page/id/Bj7qgmJ3CJUE)
 
- 
-
- 
