@@ -33,6 +33,8 @@ Study Notes
 
 [如丝般顺滑：使用 CSS3 实现 60 帧的动画](https://www.zcfy.cc/article/smooth-as-butter-achieving-60-fps-animations-with-css3-1054.html#)
 
+[CSS3 动画实践](https://github.com/daixwu/notes/blob/master/posts/20190702/1.md)
+
 ## Canvas
 
 [Canvas API 详解](https://github.com/daixwu/notes/blob/master/posts/20180621/1.md)
