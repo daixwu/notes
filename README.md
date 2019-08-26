@@ -4,25 +4,39 @@
 
 ## VUE
 
-[vue 是什么 vue实例与数据绑定 计算数据](https://github.com/daixwu/notes/blob/master/posts/20180117/1.md)
+[Vue 实例选项](https://github.com/daixwu/notes/blob/master/posts/20180117/1.md)
 
-[内置指令 数组更新 方法与事件](https://github.com/daixwu/notes/blob/master/posts/20180117/2.md)
+[Vue 内置指令](https://github.com/daixwu/notes/blob/master/posts/20180117/2.md)
 
 [表单与v-model](https://github.com/daixwu/notes/blob/master/posts/20180117/3.md)
 
-[Vue中的组件](https://github.com/daixwu/notes/blob/master/posts/20180117/4.md)
+[Vue 组件基础](https://github.com/daixwu/notes/blob/master/posts/20180117/4.md)
 
-[自定义指令](https://github.com/daixwu/notes/blob/master/posts/20180126/1.md)
+[Vue 组件进阶](https://github.com/daixwu/notes/blob/master/posts/20190514/1.md)
 
-[Render 函数](https://github.com/daixwu/notes/blob/master/posts/20180126/2.md)
+[Vue 自定义指令](https://github.com/daixwu/notes/blob/master/posts/20180126/1.md)
+
+[Vue Render函数](https://github.com/daixwu/notes/blob/master/posts/20180126/2.md)
+
+
 
 [Vue 过渡 & 动画](https://github.com/daixwu/notes/blob/master/posts/20181211/1.md)
+[Vue 动画效果](https://github.com/daixwu/notes/blob/master/posts/20190704/1.md)
+
+[可复用性 & 组合](https://github.com/daixwu/notes/blob/master/posts/20190708/1.md)
+
+
+
+
 [Vue Router 使用](https://github.com/daixwu/notes/blob/master/posts/20181213/1.md)
 [Vue Vuex 使用](https://github.com/daixwu/notes/blob/master/posts/20181217/1.md)
 
-[Vue.js 组件](https://github.com/daixwu/notes/blob/master/posts/201900514/1.md)
-[Vue 动画效果](https://github.com/daixwu/notes/blob/master/posts/20190704/1.md)
-[可复用性 & 组合](https://github.com/daixwu/notes/blob/master/posts/20190708/1.md)
+
+
+
+
+
+
 
 ## css
 
