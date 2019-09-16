@@ -18,25 +18,15 @@
 
 [Vue Render函数](https://github.com/daixwu/notes/blob/master/posts/20180126/2.md)
 
-
-
 [Vue 过渡 & 动画](https://github.com/daixwu/notes/blob/master/posts/20181211/1.md)
+
 [Vue 动画效果](https://github.com/daixwu/notes/blob/master/posts/20190704/1.md)
 
 [可复用性 & 组合](https://github.com/daixwu/notes/blob/master/posts/20190708/1.md)
 
-
-
-
 [Vue Router 使用](https://github.com/daixwu/notes/blob/master/posts/20181213/1.md)
+
 [Vue Vuex 使用](https://github.com/daixwu/notes/blob/master/posts/20181217/1.md)
-
-
-
-
-
-
-
 
 ## css
 
@@ -48,7 +38,15 @@
 
 [CSS3 动画实践](https://github.com/daixwu/notes/blob/master/posts/20190702/1.md)
 
+### 优雅的 CSS
+
+[Flex-弹性布局](https://github.com/daixwu/notes/blob/master/posts/20190606/1.md)
+
+[伪元素和伪类](https://github.com/daixwu/notes/blob/master/posts/20181024/1.md)
+
 ## JavaScript
+
+### ES6
 
 [let和const命令](https://github.com/daixwu/notes/blob/master/posts/20170129/1.md)
 
@@ -74,11 +72,9 @@
 
 [Symbol](https://github.com/daixwu/notes/blob/master/posts/20180928/1.md)
 
-
 [Promise](https://github.com/daixwu/notes/blob/master/posts/20170131/9.md)
 
 [Class](https://github.com/daixwu/notes/blob/master/posts/20180925/1.md)
-
 
 [Set 和 Map 数据结构](https://github.com/daixwu/notes/blob/master/posts/20180928/2.md)
 
@@ -92,6 +88,7 @@
 
 [编程风格](https://github.com/daixwu/notes/blob/master/posts/20180929/3.md)
 
+### 知识点
 
 [内存空间详解](https://github.com/daixwu/notes/blob/master/posts/20170131/1.md)
 
@@ -109,35 +106,31 @@
 
 [封装一个拖拽对象](https://github.com/daixwu/notes/blob/master/posts/20170131/8.md)
 
-
 [JS事件那些事儿 一次整明白](https://github.com/daixwu/notes/blob/master/posts/20181206/1.md)
-
 
 [理解 JavaScript 中的 call、apply、bind](https://github.com/daixwu/notes/blob/master/posts/20181218/1.md)
 
 [JavaScript 模块化解析](https://github.com/daixwu/notes/blob/master/posts/20181217/2.md)
 
+### 技巧篇
+
+[基于 JavaScript 开发灵活的数据应用](https://github.com/daixwu/notes/blob/master/posts/20180903/1.md)
 
 [JS 中的各种宽高属性](https://github.com/daixwu/notes/blob/master/posts/20180621/4.md)
 
 [JS开发中的一些小技巧和方法](https://github.com/daixwu/notes/blob/master/posts/20180709/1.md)
 
+[JavaScript客户端检测(判断引擎、浏览器、平台等)](https://github.com/daixwu/notes/blob/master/posts/20181031/1.md)
+
+[5个技巧让你更好的编写 JavaScript(ES6) 中条件语句](https://github.com/daixwu/notes/blob/master/posts/20181101/3.md)
+
+## 移动端解决方案
+
 [移动端滑动固顶效果](https://github.com/daixwu/notes/blob/master/posts/20180709/2.md)
 
 [异步多图加载这件小事儿](https://github.com/daixwu/notes/blob/master/posts/20180709/3.md)
 
-
-[基于 JavaScript 开发灵活的数据应用](https://github.com/daixwu/notes/blob/master/posts/20180903/1.md)
-
-## 功能性
-
-[H5视频播放解决方案](https://github.com/daixwu/notes/blob/master/posts/20180621/3.md)
-
-## 优雅的 CSS
-
-[Flex-弹性布局](https://github.com/daixwu/notes/blob/master/posts/20190606/1.md)
-
-[伪元素和伪类](https://github.com/daixwu/notes/blob/master/posts/20181024/1.md)
+[移动端网页性能优化自查表](https://github.com/daixwu/notes/blob/master/posts/20181101/2.md)
 
 ## 前端动画实现
 
@@ -159,25 +152,31 @@
 
 ## TOOL
 
-### npm
+### Animation
 
-[npm 使用背书 知其一知其二](https://github.com/daixwu/notes/blob/master/posts/20181207/1.md)
+[vue-anime](https://github.com/BenAHammond/vue-anime)
 
-[如何用 npm 发布包](https://github.com/daixwu/notes/blob/master/posts/20190802/1.md)
+[anime.js 文档](https://www.animejs.cn/documentation/)
 
-[使用 rollup 打包 JS](https://github.com/daixwu/notes/blob/master/posts/20181204/1.md)
+### 视频播放
+
+[H5视频播放解决方案](https://github.com/daixwu/notes/blob/master/posts/20180621/3.md)
+
+### 代码检测
+
+[eslintrc文件配置](https://github.com/daixwu/notes/blob/master/posts/20180119/1.md)
+
+### Zepto.js
+
+[zepto 源码探析](https://github.com/daixwu/notes/blob/master/posts/20180326/1.md)
+
+### 正则表达式
 
 [常用的正则表单验证](https://github.com/daixwu/notes/blob/master/posts/20181101/1.md)
 
-[移动端网页性能优化自查表](https://github.com/daixwu/notes/blob/master/posts/20181101/2.md)
+### Rollup
 
-[5个技巧让你更好的编写 JavaScript(ES6) 中条件语句](https://github.com/daixwu/notes/blob/master/posts/20181101/3.md)
-
-[JavaScript客户端检测(判断引擎、浏览器、平台等)](https://github.com/daixwu/notes/blob/master/posts/20181031/1.md)
-
-[zepto源码探析](https://github.com/daixwu/notes/blob/master/posts/20180326/1.md)
-
-[eslintrc文件配置](https://github.com/daixwu/notes/blob/master/posts/20180119/1.md)
+[使用 rollup 打包 JS](https://github.com/daixwu/notes/blob/master/posts/20181204/1.md)
 
 ## HTML
 
@@ -185,12 +184,19 @@
 
 [`<input>` 表单部件元素](https://github.com/daixwu/notes/blob/master/posts/20181026/2.md)
 
+## Node
 
 ### Node 实用模块
 
 [config-lite模块的使用](https://github.com/daixwu/notes/blob/master/posts/20180703/1.md)
 
-### MongoDB 了解一下
+### npm
+
+[npm 使用背书 知其一知其二](https://github.com/daixwu/notes/blob/master/posts/20181207/1.md)
+
+[如何用 npm 发布包](https://github.com/daixwu/notes/blob/master/posts/20190802/1.md)
+
+## MongoDB
 
 [Mongoose的使用](https://github.com/daixwu/notes/blob/master/posts/20180116/1.md)
 
@@ -203,4 +209,3 @@
 [Mongoose开发实战-高级篇](http://ghmagical.com/article/page/id/1NSGRZGU93cy)
 
 [MongoDB常用语句](http://ghmagical.com/article/page/id/Bj7qgmJ3CJUE)
-
