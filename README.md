@@ -192,6 +192,8 @@
 
 ### npm
 
+[npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
+
 [npm 使用背书 知其一知其二](https://github.com/daixwu/notes/blob/master/posts/20181207/1.md)
 
 [如何用 npm 发布包](https://github.com/daixwu/notes/blob/master/posts/20190802/1.md)
