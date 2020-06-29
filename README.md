@@ -2,6 +2,28 @@
 
 > To strive, to seek, to find, and not to yield.
 
+## JS
+
+### [this 指向](posts/js/this.md)
+
+### [作用域和闭包](posts/js/closure.md)
+
+### [JS API](posts/js/api/API.md)
+
+### [JS 类型相关](posts/js/type.md)
+
+### [函数式和高质量函数](posts/js/functional-expression.md)
+
+### [前端数据结构](posts/js/data-structure/index.md)
+
+### [前端算法](posts/js/arithmetic.md)
+
+### [网络基础和应用](posts/js/network-basis.md)
+
+### [缓存](posts/js/cache/index.md)
+
+### [前端面试题](posts/js/interview-question.md)
+
 ## VUE
 
 [Vue 实例选项](https://github.com/daixwu/notes/blob/master/posts/20180117/1.md)

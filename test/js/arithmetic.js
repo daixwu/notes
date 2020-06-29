@@ -86,22 +86,23 @@
 
 // console.log('removeDuplicates(array): ', removeDuplicates(array))
 
-const string10to62 = number => {
-  const chars = '0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ'
+// const string10to62 = number => {
+//   const chars = '0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ'
 
-  const charsArr = chars.split('')
-  const radix = chars.length
-  let qutient = +number
-  let arr = []
+//   const charsArr = chars.split('')
+//   const radix = chars.length
+//   let qutient = +number
+//   let arr = []
 
-  do {
-    let mod = qutient % radix
-    qutient = (qutient - mod) / radix
-    arr.unshift(charsArr[mod])
-  }
-  while(qutient)
+//   do {
+//     let mod = qutient % radix
+//     qutient = (qutient - mod) / radix
+//     arr.unshift(charsArr[mod])
+//   }
+//   while(qutient)
 
-  return arr.join('')
-}
+//   return arr.join('')
+// }
 
-console.log('string10to62(10): ', string10to62(8));
+// console.log('string10to62(10): ', string10to62(8));
+
