@@ -12,6 +12,8 @@
 
 ### [JS 类型相关](posts/js/type.md)
 
+### [异步](posts/js/async/index.md)
+
 ### [函数式和高质量函数](posts/js/functional-expression.md)
 
 ### [前端数据结构](posts/js/data-structure/index.md)
