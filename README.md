@@ -12,25 +12,63 @@
 
 ### [作用域和闭包](posts/js/closure.md)
 
+### [原型和原型链](posts/js/prototype/index.md)
+
+### [异步](posts/js/async/index.md)
+
 ### [JS API](posts/js/api/API.md)
 
 ### [JS 类型相关](posts/js/type.md)
 
-### [异步](posts/js/async/index.md)
-
-### [原型和原型链](posts/js/prototype/index.md)
-
 ### [ES Next](posts/js/es-next.md)
 
+## 函数式编程
+
 ### [函数式和高质量函数](posts/js/functional-expression.md)
+
+## 设计模式
+
+### [前端设计模式](posts/js/design/index.md)
+
+## 网络基础
+
+### [网络基础和应用](posts/js/network-basis.md)
+
+## 缓存
+
+### [缓存](posts/js/cache/index.md)
+
+## 性能篇
+
+[性能优化](posts/js/performance/index.md)
+
+[性能监控](posts/js/performance/index.md)
+
+[错误信息收集](posts/js/performance/onerror.md)
+
+## 算法篇
 
 ### [前端数据结构](posts/js/data-structure/index.md)
 
 ### [前端算法](posts/js/arithmetic.md)
 
-### [网络基础和应用](posts/js/network-basis.md)
+## 工具篇
 
-### [缓存](posts/js/cache/index.md)
+### [webpack](posts/tool/webpack/webpack.md)
+
+## 模块化
+
+[前端模块化](posts/js/module/module.md)
+
+[ES 模块化和 tree shaking](posts/js/module/es-module.md)
+
+## 框架
+
+[前端框架知识点](posts/js/frame/fe-frame.md)
+
+[发布订阅模式简单应用](posts/js/frame/pub-sub.md)
+
+## 面试题
 
 ### [前端面试题](posts/js/interview-question.md)
 

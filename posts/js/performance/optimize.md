@@ -1,47 +1,70 @@
 # 性能优化
 
-前端性能涉及方方面面，优化角度切入点都有所不同。我认为，主要可以分为：页面工程优化和代码细节优化两大方向。
+## 网页加载过程
 
-页面工程优化从页面请求开始，涉及网络协议、资源配置、浏览器性能、缓存等；代码细节优化上相对零散，比如 JavaScript 对 DOM 操作，宿主环境的单线程相关内容等。
+1、 加载过程
 
-也正如上所答，本节课程也会基于以下两个大方向的相关知识进行梳理：
+1. DNS解析: 域名 -> IP地址
 
-- 页面工程优化
+2. 浏览器根据IP地址向服务器发起http请求
 
-- 代码细节优化
+3. 服务器处理http请求，并返回给浏览器
 
-## 页面工程优化
+2、 渲染过程
 
-### WebP 图片优化
+1. 根据HTML代码生成 DOM Tree
 
-我们的产品页面中，往往存在大量的图片内容，因此图片的性能优化是瓶颈和重点。除了传统的图片懒加载手段以外，我调研并实施了 WebP 图片格式的替换。由于可能会有潜在兼容性的问题，因而具体做法是先进行兼容性嗅探。这一手段借鉴了社区一贯做法，利用 img 标签加载一张 base64 的 WebP 图片，并将结果存入 localStorage 中防止重复判断。如果该终端支持，则再对图片格式进行替换。这个兼容性嗅探过程，也封装成 promise 化的通用接口。
+2. 根据CSS代码生成 CSSOM（CSS Object Mode）
 
-相关代码片段如下：
+3. 将 DOM Tree和 CSSOM整合生成 Render tree
+
+4. 根据 Render tree渲染页面
+
+5. 遇到`<script>`则暂停渲染，优先加载并执行Js代码，完成再继续
+
+6. 直至把 Render tree 渲染完成
+
+3、 `window.onload` 和 `DOMContentLoaded`
 
 ```js
-const supportWebp = () => new Promise(resolve => {
-  const image = new Image()
-  image.onerror = () => resolve(false)
-  image.onload = () => resolve(image.width === 1)
-  image.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA='
-}).catch(() => false)
+window.addEventListener('load', function () {
+  // 页面的全部资源加载完才会执行，包括图片、视频等
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  // DOM 渲染完即可执行，此时图片、视频还可能没有加载完
+})
 ```
 
-### 按需加载优化
+## 前端性能优化
 
-### 图片懒加载
+前端性能涉及方方面面，优化角度切入点都有所不同。就其目的性而言，主要可以分为：让加载更快和让渲染更快两个方面。
 
-### 雪碧图
+### 让加载更快
 
-### 合理设置缓存策略
+- 减少资源体积：代码压缩、以 tree shaking 手段为主的代码瘦身、优先选择 WebP 格式、按需加载
 
-### 使用 prefetch / preload 预加载等新特性
+- 减少访问次数：合并代码、使用雪碧图、base64、SSR服务器端渲染、缓存
 
-### 以 tree shaking 手段为主的代码瘦身
+- 优化网络链接：使用CDN、静态资源分域存放、DNS预解析
 
-## 代码细节优化
+### 让渲染更快
 
-### 动画性能方向
+- CSS 放在 head， JS 放在 body 最下面
+
+- 尽早开始执行 JS， 用 DOMContentLoaded 触发
+
+- 懒加载（图片懒加载，上滑加载更多）
+
+- 对 DOM 查询进行缓存
+
+- 频繁 DOM 操作，合并到一起插入 DOM 结构
+
+- 节流 throttle 防抖 debounce（让渲染更加流畅）
+
+- 使用 prefetch / preload 预加载等新特性
+
+## 动画性能方向
 
 如果发现页面动画效果卡顿，你会从哪些角度解决问题？
 
@@ -72,9 +95,3 @@ const supportWebp = () => new Promise(resolve => {
 - 对于给出的代码，如何进行优化
 
 - 如何实现滚动时的节流、防抖函数
-
-### 操作 DOM 方向
-
-### 浏览器加载、渲染性能方向
-
-### 性能测量、监控方向
