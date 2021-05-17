@@ -109,9 +109,7 @@ p instanceof Object
 返回 false，是因为 5 是基本类型，它并不是 Number 构造函数构造出来的实例对象，如果：
 
 ```js
-new Number(5) instanceof Number
-
-// true
+new Number(5) instanceof Number // true
 ```
 
 结果返回 true。
@@ -140,18 +138,14 @@ const instanceofMock = (L, R) => {
 L 表示左表达式，R 表示右表达式，我们可以如此使用：
 
 ```js
-instanceofMock('', String)
-
-// false
+instanceofMock('', String) // false
 
 function Person(name) {
    this.name = name
 }
 const p = new Person('lucas')
 
-instanceofMock(p, Person)
-
-// true
+instanceofMock(p, Person) // true
 ```
 
 ### 使用 constructor 和 Object.prototype.toString 判断类型
@@ -449,6 +443,40 @@ console.log(foo)
 - 函数参数是一个引用类型时，当在函数体内修改这个值的某个属性值时，将会对参数进行修改
 
 - 函数参数是一个引用类型时，如果我们直接修改了这个值的引用地址，则相当于函数体内新创建了一份引用，对于任何操作不会影响原参数实际值
+
+## 对象深拷贝实现
+
+```js
+/**
+ * 深拷贝
+ * @param {Object} obj 要拷贝的对象
+ */
+function deepClone(obj = {}) {
+  if(typeof obj !== 'object' || obj == null) {
+    // obj 是 null 或者不是对象和数组
+    return obj
+  }
+
+  // 初始化返回结果
+  let result
+  if(obj instanceof Array) {
+    result = []
+  } else {
+    result = {}
+  }
+
+  for (let key in obj) {
+    // 保证 key 不是原型属性
+    if(obj.hasOwnProperty(key)) {
+      // 递归调用
+      result[key] = deepClone(obj[key])
+    }
+  }
+
+  // 返回结果
+  return result
+}
+```
 
 ## cannot read property of undefined 问题解决方案
 

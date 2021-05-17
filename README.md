@@ -8,17 +8,17 @@
 
 ## JS
 
+### [JS 类型相关](posts/js/type.md)
+
+### [原型和原型链](posts/js/prototype/index.md)
+
 ### [this 指向](posts/js/this.md)
 
 ### [作用域和闭包](posts/js/closure.md)
 
-### [原型和原型链](posts/js/prototype/index.md)
-
 ### [异步](posts/js/async/index.md)
 
 ### [JS API](posts/js/api/API.md)
-
-### [JS 类型相关](posts/js/type.md)
 
 ### [ES Next](posts/js/es-next.md)
 

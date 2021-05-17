@@ -28,5 +28,3 @@ notify.add(() => {
 notify.emit()
 // emit here
 ```
-
-

@@ -22,7 +22,7 @@
 
 ### 数据劫持与代理
 
-感知数据变化的方法很直接，就是进行数据劫持或数据代理。我们往往通过 Object.defineProperty 实现。这个方法可以定义数据的 getter 和 setter，具体用法不再赘述。下面来看一个场景：
+感知数据变化的方法很直接，就是进行数据劫持或数据代理。我们往往通过 `Object.defineProperty` 实现。这个方法可以定义数据的 `getter` 和 `setter`，具体用法不再赘述。下面来看一个场景：
 
 ```js
 let data = {
@@ -36,7 +36,7 @@ let data = {
 
 const observe = data => {
   if (!data || typeof data !== 'object') {
-      return
+    return
   }
   Object.keys(data).forEach(key => {
     let currentValue = data[key]
@@ -204,7 +204,7 @@ data.course.author.push('messi')
 
 ## 模版编译实现
 
-模版编译其实原理很简单，就是使用正则 + 遍历，有时也需要一些算法知识，我们来看现在的场景，只需要对 #app 节点下内容进行替换，通过正则识别出模版变量，获取对应的数据即可：
+模版编译其实原理很简单，就是使用正则 + 遍历，有时也需要一些算法知识，我们来看现在的场景，只需要对 `#app` 节点下内容进行替换，通过正则识别出模版变量，获取对应的数据即可：
 
 ```js
 compile(document.querySelector('#app'), data)
@@ -264,7 +264,7 @@ function compile(el, data) {
 <input v-model="inputData">
 ```
 
-我们需要在模版编译中，对于存在 v-model 属性的 node 进行事件监听，在输入框输入时，改变 v-model 属性值对应的数据即可（这里为 inputData），增加 compile 中的 replace 方法逻辑，对于 node.nodeType === 1 的 DOM 类型，伪代码如下：
+我们需要在模版编译中，对于存在 v-model 属性的 node 进行事件监听，在输入框输入时，改变 v-model 属性值对应的数据即可（这里为 inputData），增加 compile 中的 replace 方法逻辑，对于 `node.nodeType === 1` 的 DOM 类型，伪代码如下：
 
 ```js
 function replace(el, data) {
