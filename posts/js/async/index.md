@@ -18,7 +18,7 @@
 
 - 定时任务， 如 setTimeout
 
-## event loop(事件循环/事件轮询)
+## event loop(事件循环/事件轮询) 异步回调的实现原理
 
 1. 同步代码一行一行放在 Call Stack 执行
 
@@ -47,7 +47,7 @@
 - 微任务执行时机比宏任务要早
 
 event loop 和 DOM 渲染
-￼
+
 ![micro-task](./images/micro-task.png)
 
 ```js
