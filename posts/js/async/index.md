@@ -20,17 +20,21 @@
 
 ## event loop(事件循环/事件轮询) 异步回调的实现原理
 
-1. 同步代码一行一行放在 Call Stack 执行
+1. 同步代码一行一行放在 Call Stack(调用栈) 执行
 
 2. 遇到异步会先“记录”下，等待事件（定时、网络请求等）
 
-3. 时机到了就移动到 Callback Queue
+3. 时机到了就移动到 Callback Queue（回调函数队列）
 
 4. 如果 Call Stack 为空（即同步代码执行完）Event Loop 开始工作
 
-5. 轮询查找 Callback Queue 如有则移动到 Call Stack 执行
+5. 轮询查找 Callback Queue（回调函数队列） 如有则移动到 Call Stack(调用栈) 执行
 
 6. 然后继续轮询查找（永动机一样）
+
+> 每次 Call Stack 清空（即每次轮询结束），即同步任务执行完都是DOM重新渲染的机会，DOM 结构如有改变则重新渲染，然后再去触发下一次 Event Loop
+
+![Event Loop](images/eventloop.gif)
 
 ## DOM 事件和 event loop
 
@@ -40,15 +44,21 @@
 
 ## 宏任务（macroTask）和微任务（microTask）
 
-- 宏任务：DOM 渲染后触发 如 setTimeout、setInterval、Ajax、DOM 事件
+- **宏任务**(由浏览器规定)：DOM 渲染后触发 如 setTimeout、setInterval、Ajax、DOM 事件
 
-- 微任务：DOM 渲染前触发 如 Promise、async / await
+- **微任务**(ES6语法规定)：DOM 渲染前触发 如 Promise、async / await
 
-- 微任务执行时机比宏任务要早
+- **微任务执行时机比宏任务要早**
+
+![task1](./images/task1.png)
+![task2](./images/task2.png)
+![task3](./images/task3.png)
 
 event loop 和 DOM 渲染
 
 ![micro-task](./images/micro-task.png)
+
+## 经典面试题
 
 ```js
 async function async1 () {

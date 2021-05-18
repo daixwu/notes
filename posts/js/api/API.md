@@ -1,5 +1,20 @@
 # JS API
 
+## BOM
+
+- [navigator](https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator) 浏览器信息
+
+- [screen](https://developer.mozilla.org/zh-CN/docs/Web/API/Screen) 屏幕信息
+
+> [理清window和document的区别以及两者的宽高](https://www.jianshu.com/p/b28a4dcd1b8c)
+
+- [location](https://developer.mozilla.org/zh-CN/docs/Web/API/Location) 地址信息
+
+- [history](https://developer.mozilla.org/zh-CN/docs/Web/API/History) 前进后退信息
+
+
+## DOM
+
 如何获取文档中任意一个元素距离文档 document 顶部的距离？
 
 ```js
@@ -10,6 +25,7 @@ const offset = ele => {
   }
 
   const getOffset = (node, init) => {
+    // 1 代表元素 Element 2 代表属性 Attr 3 代表元素或属性中的文本内容 Text
     if (node.nodeType !== 1) {
       return
     }

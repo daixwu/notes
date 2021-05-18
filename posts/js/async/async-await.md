@@ -189,7 +189,10 @@ async function correct() {
   return a
 }
 
-correct().then(v => console.log(a)) // 1
+correct().then(v => console.log(a))
+
+// error
+// 1
 ```
 
 被捕获的错误就是 rejected 的值。在我们捕获这个异常之后，我们有很多方式来处理它：
@@ -208,8 +211,11 @@ correct().then(v => console.log(a)) // 1
 let a
 async function f() {
   await Promise.reject('error').catch(error => console.log(error))
-  a = await 1 // 这段 await 并没有执行
+  a = await 1
 }
 
 f().then(v => console.log(a))
+
+// error
+// 1
 ```
