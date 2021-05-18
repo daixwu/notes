@@ -12,10 +12,11 @@
 
 - [history](https://developer.mozilla.org/zh-CN/docs/Web/API/History) 前进后退信息
 
-
 ## DOM
 
 如何获取文档中任意一个元素距离文档 document 顶部的距离？
+
+### 原始方法
 
 ```js
 const offset = ele => {
@@ -60,7 +61,7 @@ const offset = ele => {
 }
 ```
 
-## getBoundingClientRect 方法
+### getBoundingClientRect 方法
 
 [getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect) 方法用来描述一个元素的具体位置，该位置的下面四个属性都是相对于视口左上角的位置而言的。对某一节点执行该方法，它的返回值是一个 DOMRect 类型的对象。这个对象表示一个矩形盒子，它含有：left、top、right 和 bottom 等只读属性。
 
