@@ -1,22 +1,6 @@
 # JS API
 
-## BOM
-
-- [navigator](https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator) 浏览器信息
-
-- [screen](https://developer.mozilla.org/zh-CN/docs/Web/API/Screen) 屏幕信息
-
-> [理清window和document的区别以及两者的宽高](https://www.jianshu.com/p/b28a4dcd1b8c)
-
-- [location](https://developer.mozilla.org/zh-CN/docs/Web/API/Location) 地址信息
-
-- [history](https://developer.mozilla.org/zh-CN/docs/Web/API/History) 前进后退信息
-
-## DOM
-
 如何获取文档中任意一个元素距离文档 document 顶部的距离？
-
-### 原始方法
 
 ```js
 const offset = ele => {
@@ -61,7 +45,7 @@ const offset = ele => {
 }
 ```
 
-### getBoundingClientRect 方法
+## getBoundingClientRect 方法
 
 [getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect) 方法用来描述一个元素的具体位置，该位置的下面四个属性都是相对于视口左上角的位置而言的。对某一节点执行该方法，它的返回值是一个 DOMRect 类型的对象。这个对象表示一个矩形盒子，它含有：left、top、right 和 bottom 等只读属性。
 
@@ -294,5 +278,3 @@ const compose = (...args) => {
 ```
 
 这种实现利用了 Promise 特性：首先通过 `Promise.resolve(init.apply(null, arg))` 启动逻辑，启动一个 resolve 值为最后一个函数接收参数后的返回值，依次执行函数。因为 `promise.then()` 仍然返回一个 Promise 类型值，所以 reduce 完全可以按照 Promise 实例执行下去。
-
-

@@ -11,7 +11,7 @@ HTTP 响应常见状态码这里只做一个速查总结。
 
 - 200-299：表示成功接收请求并已完成整个处理过程
 
-- 300-399：需要客户进一步细化需求，以进一步完成请求，常用的有 301（永久重定向）、302（临时重定向）、304（缓存相关）
+- 300-399：需要客户进一步细化需求，以进一步完成请求，常用的有 301（永久重定向）、302（临时重定向）、304（缓存相关 资源未被修改）
 
 - 400-499：请求出错，包含语法错误或者无法正确执行逻辑，常用的有 404（无对应资源）、401（权限问题）、403 （服务器拒绝请求）
 
@@ -43,6 +43,42 @@ HTTP 响应常见状态码这里只做一个速查总结。
 | POST | 否 | 否 |
 | PUT | 否 | 是 |
 | DELETE | 否 | 是 |
+
+### Restful API
+
+- 传统API设计：把每个url当做一个功能 如 /api/list?pageIndex=2
+
+- Restful APi设计：把每个url当做一个唯一的资源，如 /api/list/2
+
+### http headers
+
+**常见的 Request Headers**：
+
+| 请求头参数 | 说明 |
+| -- | -- |
+| Accept | 指定客户端可以接受的内容类型 |
+| Accept-Encoding | 客户端接收编码类型，一些网络压缩格式，如gzip |
+| Accept-Language | 客户端可以接受的语⾔言类型，如zh-CN |
+| Connection: keep-alive | 一次TCP连接重复使用，close表示不想建立长链接在操作完成后关闭链接，而keep-alive 表示希望保持畅通来回传输数据。 爬虫时一般都建立一个长链接。 |
+| Cookie | 本地cookie |
+| Host | 域名信息 |
+| User-Agent | (简称UA)客户端信息 |
+| Content-type | 发送数据的格式，如 application/json |
+| Cache-Control | 指定了服务器和客户端在交互时遵循的缓存机制，即是否要留下缓存页面数据。no-cache：客户端告诉服务器，自己不要读取缓存，要向服务器发起请求。no-store：同时也是响应头的参数，请求和响应都禁⽌止缓存，即不存储。max-age=0：表示当访问过此网页后的多少秒内再次访问，只加载缓存，而不去服务器请求，在爬虫时一般就写0秒 |
+| If-None-Match | 验证资源是否修改，值为Etag的值，由服务端生成 |
+| If-Modified-Since | 判断客户端的页面是否是最新的，如果不是最新的，则返回新的内容，如果是最新的，则返回 304 和空响应体告诉客户端其本地 cache 的页面是最新的。 |
+
+**常见的 Response Headers**：
+
+| 响应头参数 | 说明 |
+| -- | -- |
+| Content-type | 返回数据的格式，如 application/json |
+| Content-length | 返回数据的大小，多少字节 |
+| Content-Encoding | 返回数据的压缩算法，如gzip |
+| Set-Cookie | 服务端设置 cookie |
+| Cache-Control: max-age /  no-cache / no-store / private / public	控制强制缓存的逻辑 max-age(设置最大过期时间)、no-cache(不用强制缓存)、no-store(不用强制缓存包括服务端，彻底不用)、private(只允许最终用户做缓存)、public(允许中间路由、代理做缓存) |
+| Etag | 资源的唯一标识(一个字符串，类似人类的指纹） |
+| last-Modified | 资源的最后修改时间 |
 
 ### 如何理解 HTTP 协议是无状态的
 

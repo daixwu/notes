@@ -117,7 +117,7 @@ const memorize = function(fn) {
 
 这样的做法得益于 JavaScript filter 对函数式的友好支持，链式调用也在一定程度上实现了组合性。
 
-更加通用的组合做法是使用 compose 方法，收益非常直观：
+更加通用的组合做法是使用 [compose](https://www.jianshu.com/p/eda918cf738a) 方法，收益非常直观：
 
 - 单一功能的小函数更好维护
 
@@ -175,7 +175,7 @@ filterLowerThan10([1, 3, 5, 29, 34])
 
 ### curry 化面试题
 
-再通过一到面试题加深理解。
+再通过一道面试题加深理解。
 
 实现 add 方法，要求：
 

@@ -18,7 +18,9 @@
 
 ### [异步](posts/js/async/index.md)
 
-### [JS API](posts/js/api/API.md)
+### [JS Web API DOM BOM 操作](posts/js/api/js-web-api.md)
+
+### [JS 实用 API](posts/js/api/API.md)
 
 ### [ES Next](posts/js/es-next.md)
 
@@ -30,13 +32,19 @@
 
 ### [前端设计模式](posts/js/design/index.md)
 
+### [前端设计模式的应用](posts/js/design/apply.md)
+
 ## 网络基础
+
+### [Ajax 跨域](posts/js/ajax.md)
 
 ### [网络基础和应用](posts/js/network-basis.md)
 
 ## 缓存
 
 ### [缓存](posts/js/cache/index.md)
+
+### [前端缓存应用](posts/js/cache/fe-cache.md)
 
 ## 性能篇
 
