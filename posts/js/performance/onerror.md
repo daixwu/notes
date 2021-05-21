@@ -145,12 +145,21 @@ try {
 
 ```js
 try {
-  setTimeout(() => {
-    a
-  })
-} catch(e) {
+  throw new Error(3)
+} catch (e) {
   console.log(e)
 }
+// Error: 3（正常打印出错误实例，未报错）
+
+try {
+  setTimeout(function () {
+    throw new Error(5)
+  }, 100)
+
+} catch (e) {
+  console.log(e)
+}
+// Uncaught Error: 5（一个未捕获错误）
 ```
 
 也无法捕获，除非在 setTimeout 中再加一层 try catch。
@@ -209,7 +218,7 @@ module.exports = {
 
 ## 对 Promise 错误处理
 
-我们再来看一下针对 Promise 的错误收集与处理。我们都提倡养成写 Promise 的时候最后写上 catch 函数的习惯。ESLint 插件 eslint-plugin-promise 会帮我们完成这项工作，使用规则：catch-or-return 来保障代码中所有的 promise（被显式返回的除外）都有相应的 catch 处理。比如这样的写法：
+我们再来看一下针对 Promise 的错误收集与处理。我们都提倡养成写 Promise 的时候最后写上 catch 函数的习惯。ESLint 插件 eslint-plugin-promise 会帮我们完成这项工作，使用规则：catch-or-return 来保障代码中所有的 promise（被显式返回的错误）都有相应的 catch 处理。比如这样的写法：
 
 ```js
 var p = new Promise()

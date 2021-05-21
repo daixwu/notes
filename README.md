@@ -48,7 +48,7 @@
 
 ## 性能篇
 
-### [性能优化](posts/js/performance/index.md)
+### [性能优化](posts/js/performance/optimize.md)
 
 ### [性能监控](posts/js/performance/index.md)
 

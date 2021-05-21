@@ -64,7 +64,73 @@ document.addEventListener('DOMContentLoaded', function () {
 
 - 节流 throttle 防抖 debounce（让渲染更加流畅）
 
-- 使用 prefetch / preload 预加载等新特性
+- 使用 [prefetch / preload](https://blog.csdn.net/vivo_tech/article/details/109485871) 预加载等新特性
+
+**防抖 debounce**:
+
+- 监听一个输入框的，文字变化后触发 change事件
+
+- 直接用 keyup事件，则会频繁触发 change事件
+
+- 防抖：用户输入结束或暂停时，才会触发 change事件
+
+```js
+// 防抖
+function debounce(fn, delay = 500) {
+  // timer 是闭包中的
+  let timer = null
+  return function() {
+    if(timer) {
+      // delay 时间未到，清除之前的定时任务
+      clearTimeout(timer)
+    }
+    timer = setTimeout(() => {
+      fn.apply(this, arguments)
+      // 清空定时器
+      timer = null
+    }, delay)
+  }
+}
+
+const input = document.getElementById('input')
+input.addEventListener('keyup', debounce(function(e){
+  console.log(e.target)
+}), 600)
+```
+
+**节流 throttle**：
+
+- 拖拽一个元素时，要随时拿到该元素被拖拽的位置
+
+- 直接用drag事件，则会频繁触发，很容易导致卡顿
+
+- 节流：无论拖拽速度多快，都会每隔100ms触发一次
+
+```html
+<div id="box" draggable="true"></div>
+```
+
+```js
+// 节流
+function throttle(fn, delay = 100) {
+  let timer = null
+
+  return function() {
+    if(timer) {
+      return
+    }
+    timer = setTimeout(() => {
+      fn.apply(this, arguments)
+      timer = null
+    }, delay)
+  }
+}
+
+const box = document.getElementById('box')
+box.addEventListener('dragstart', throttle(function(e) {
+  console.log(e.offsetX, e.offsetY)
+}))
+```
 
 ## 动画性能方向
 
@@ -78,22 +144,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 - 优先使用消耗最低的 transform 和 opacity 两个属性
 
-- 使用 will-change 属性
+- 使用 [will-change](https://developer.mozilla.org/zh-CN/docs/Web/CSS/will-change) 属性
 
 - 独立合成层，减少绘制区域
 
-- 对于只能使用 JavaScript 实现动画效果的情况，考虑 requestAnimationFrame、requestIdleCallback API
+- 对于只能使用 JavaScript 实现动画效果的情况，考虑 [requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)、[requestIdleCallback](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestIdleCallback) API
 
 - 批量进行样式变换，减少布局抖动
 
 事实上，上面每一点的背后都包含着很多知识点，例如：
 
-- 如何理解 requestAnimationFrame 和 60 fps
+- 如何理解 requestAnimationFrame 和 60 fps 参考：[Web 动画帧率（FPS）计算](https://www.cnblogs.com/coco1s/p/8029582.html)
 
-- 如何实现 requestAnimationFrame polyfill
+- 如何实现 requestAnimationFrame polyfill [参阅](https://www.jianshu.com/p/2d5d638466c1)
 
-- 哪些操作会触发浏览器 reflow（重排）或者 repaint（重绘）
-
-- 对于给出的代码，如何进行优化
-
-- 如何实现滚动时的节流、防抖函数
+- 哪些操作会触发浏览器 reflow（重排）或者 repaint（重绘）[参阅](https://blog.csdn.net/wanda000/article/details/104824686)

@@ -204,7 +204,7 @@ console.log(arr.splice(1, 0, 25)) // []
 console.log(arr) // [10, 25, 20, 30, 40]
 ```
 
-## [10,20,30] map(parseInt)返回结果是什么?
+## [10,20,30].map(parseInt)返回结果是什么?
 
 ```js
 const mapRes = [10, 20, 30].map(parseInt)
@@ -353,6 +353,8 @@ console.log(flat([1,2,[3,4, [5,6]]])) // [1, 2, 3, 4, 5, 6]
 [1,2,[3,4, [5,6]]].flat(Infinity)
 ```
 
+[数组拍平（扁平化） flat 方法实现](https://www.jianshu.com/p/54609c2eec4e)
+
 ## 数组去重有几种方式？
 
 ```js
@@ -383,6 +385,8 @@ console.log(unique([1,1,12,3,3,4])) // [1, 12, 3, 4]
 - setTimeout要手动控制频率，而RAF浏览器会自动控制
 
 - 后台标签或隐藏 iframe中，RAF会暂停，而 setTimeout依然执行
+
+> 使用setTimeout实现的动画，当页面被隐藏（隐藏的`<iframe>`）或最小化（后台标签页）时，setTimeout仍然在后台执行动画任务，由于此时页面处于不可见或不可用状态，刷新动画是没有意义的，而且还浪费 CPU 资源和电池寿命。而requestAnimationFrame则完全不同，当页面处于未激活的状态下，该页面的屏幕绘制任务也会被浏览器暂停，因此跟着浏览器步伐走的requestAnimationFrame也会停止渲染，当页面被激活时，动画就从上次停留的地方继续执行，有效节省了 CPU 开销，提升性能和电池寿命。
 
 ```js
 const box1 = document.getElementById('box1')
