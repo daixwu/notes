@@ -76,9 +76,9 @@
 
 ### [发布订阅模式简单应用](posts/js/frame/pub-sub.md)
 
-## 面试题
+## 知识点
 
-### [前端面试题](posts/js/interview-question.md)
+### [前端知识点](posts/js/interview/interview-question.md)
 
 ## VUE
 

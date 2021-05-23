@@ -557,3 +557,65 @@ function LazyMan(name) {
 **设计模式解答**:
 
 关于这道题目的解答，网上最流行的是一种发布订阅模式的方案。相关代码出处：[lazyMan](https://github.com/wall-wxk/blogDemo/blob/master/2017/01/22/lazyMan.html)
+
+## vue的双向绑定怎么做的？
+
+Vue数据双向绑定原理是通过数据劫持结合发布者-订阅者模式的方式来实现的，首先是对数据进行监听，然后当监听的属性发生变化时则告诉订阅者是否要更新，若更新就会执行对应的更新函数从而更新视图
+
+参阅：[前端框架知识点](../frame/fe-frame.md)
+
+## URL 渲染页面的过程
+
+1、 加载过程
+
+1. DNS解析: 域名 -> IP地址
+
+2. 浏览器根据IP地址向服务器发起http请求
+
+3. 服务器处理http请求，并返回给浏览器
+
+![DNS解析](images/dns.jpeg)
+
+参阅：[DNS原理及解析过程详解
+](https://zhuanlan.zhihu.com/p/88260838)
+
+2、 渲染过程
+
+1. 根据HTML代码生成 DOM Tree
+
+2. 根据CSS代码生成 CSSOM（CSS Object Mode）
+
+3. 将 DOM Tree和 CSSOM整合生成 Render tree
+
+4. 根据 Render tree渲染页面
+
+5. 遇到`<script>`则暂停渲染，优先加载并执行Js代码，完成再继续
+
+6. 直至把 Render tree 渲染完成
+
+## 三次握手 四次挥手讲一下
+
+### 三次握手
+
+三次握手（Three-way Handshake）其实就是指建立一个TCP连接时，需要客户端和服务器总共发送3个包。进行三次握手的主要作用就是为了确认双方的接收能力和发送能力是否正常、指定自己的初始化序列号为后面的可靠性传送做准备。实质上其实就是连接服务器指定端口，建立TCP连接，并同步连接双方的序列号和确认号，交换TCP窗口大小信息。
+
+**为什么需要三次握手**?
+
+第一次握手：客户端发送网络包，服务端收到了。
+这样服务端就能得出结论：客户端的发送能力、服务端的接收能力是正常的。
+第二次握手：服务端发包，客户端收到了。
+这样客户端就能得出结论：服务端的接收、发送能力，客户端的接收、发送能力是正常的。不过此时服务器并不能确认客户端的接收能力是否正常。
+第三次握手：客户端发包，服务端收到了。
+这样服务端就能得出结论：客户端的接收、发送能力正常，服务器自己的发送、接收能力也正常。
+因此，需要三次握手才能确认双方的接收与发送能力是否正常。
+
+> 第三次握手的时候，是可以携带数据的。但是，第一次、第二次握手不可以携带数据
+
+### 四次挥手
+
+建立一个连接需要三次握手，而终止一个连接要经过四次挥手（也有将四次挥手叫做四次握手的）。这由TCP的半关闭（half-close）造成的。所谓的半关闭，其实就是TCP提供了连接的一端在结束它的发送后还能接收来自另一端数据的能力。
+
+TCP 连接的拆除需要发送四个包，因此称为四次挥手(Four-way handshake)，客户端或服务端均可主动发起挥手动作。
+
+参阅：[三次握手和四次挥手](https://yuanrengu.blog.csdn.net/article/details/102366854?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control)
+

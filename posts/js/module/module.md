@@ -176,7 +176,7 @@ Node.js 无疑对前端的发展具有极大的促进作用，它带来的 Commo
 
 - 模块加载顺序按照代码引入的顺序。
 
-- 注意 `module.exports` 和 `exports` 的区别
+- 注意 `module.exports` 和 `exports` 的区别 [参见](https://www.jianshu.com/p/2f8d097a681a)
 
 CommonJS 对模块的定义可分为三部分：模块引用（require）、模块定义（exports、module.exports）、模块标识（require参数）。
 
